@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssh-auditor"
+version = "0.1.0"
+description = "SSH server configuration hardening auditor against CIS benchmarks"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "typer>=0.12",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[project.scripts]
+ssh-auditor = "ssh_auditor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ssh_auditor*"]

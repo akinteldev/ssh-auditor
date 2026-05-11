@@ -1,0 +1,2 @@
+[console_scripts]
+ssh-auditor = ssh_auditor.cli:main
