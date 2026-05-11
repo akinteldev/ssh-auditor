@@ -63,6 +63,14 @@ pip install -e .
 | `0`  | Config is compliant (no critical or high findings) |
 | `1`  | One or more issues found |
 
+## Demo
+
+### Terminal Output
+
+![SSH Audit Report — terminal output](screenshots/audit-report.png)
+
+*Example: scanning `/etc/ssh/sshd_config` and reporting 16 findings across all severity levels.*
+
 ## Audit Rules
 
 ### Authentication (AUTH-001 to AUTH-007)
